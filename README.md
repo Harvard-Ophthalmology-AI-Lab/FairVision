@@ -1,8 +1,10 @@
 # FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling
 
+The dataset Harvard-FairVision30k and code for the paper entitled [**FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling**](https://arxiv.org/abs/2310.02492). Note that, the modifier word “Harvard” only indicates that our dataset is from the Department of Ophthalmology of Harvard Medical School and does not imply an endorsement, sponsorship, or assumption of responsibility by either Harvard University or Harvard Medical School as a legal identity.
+
 ## Dataset
 
-The dataset can be accessed via this [link](https://drive.google.com/drive/folders/1sLX2O_0AlrjY6JmdKijiV1zducsOsd0m?usp=sharing). This dataset can only be used for non-commercial research purposes. At no time, the dataset shall be used for clinical decisions or patient care. The data use license is [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+The dataset Harvard-FairVision30k can be accessed via this [link](http://ophai.hms.harvard.edu/datasets/harvard-fairvision30k). This dataset can only be used for non-commercial research purposes. At no time, the dataset shall be used for clinical decisions or patient care. The data use license is [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 Our dataset includes 10,000 subjects for Age-Related Macular Degeneration (AMD), Diabetic Retinopathy (DR), and glaucoma separately, totaling 30,000 subjects with comprehensive demographic identity attributes including age, gender, race, ethnicity, preferred language, and marital status. Each subject has one Scanning Laser Ophthalmoscopy (SLO) fundus photo and one sample of Optical Coherence Tomography (OCT) B-scans. The size of OCT B-scans is 200 x 200 x 200 in glaucoma, while the one of OCT B-scans. The size of OCT B-scans is 128 x 200 x 200 in AMD and DR. 
 
@@ -11,22 +13,22 @@ The dataset has an approximate size of 600 GB. Upon downloading and extracting t
 ```
 FairVision
 ├── AMD
-│   ├── test
-│   ├── train
-│   └── val
+│   ├── Training
+│   ├── Validation
+│   └── Test
 ├── data_summary_amd.csv
 ├── DR
-│   ├── test
-│   ├── train
-│   └── val
+│   ├── Training
+│   ├── Validation
+│   └── Test
 ├── data_summary_dr.csv
 ├── Glaucoma
-│   ├── test
-│   ├── train
-│   └── val
+│   ├── Training
+│   ├── Validation
+│   └── Test
 └── data_summary_glaucoma.csv
 ```
-The "train/val/test" directories contain two types of data: SLO fundus photos and NPZ files that store OCT B-scans, SLO fundus photos, and additional attributes. SLO fundus photos serve visual inspection purposes, while the copies in NPZ files eliminate the need for the dataloader to access any other files except the NPZ files. The naming convention for SLO fundus photos follows the format "slo_xxxxxx.jpg," and for NPZ files, it is "data_xxxxx.npz," where "xxxxx" (e.g., 06691) represents a unique numeric ID. The dimensions of SLO fundus photos in NPZ files are 200 x 200, whereas those in the train/val/test folders are 512 x 664. The SLO fundus photos in NPZ files are created by resizing the photos in the folders and then normalizing them to [0, 255].
+The "Training/Validation/Test" directories contain two types of data: SLO fundus photos and NPZ files that store OCT B-scans, SLO fundus photos, and additional attributes. SLO fundus photos serve visual inspection purposes, while the copies in NPZ files eliminate the need for the dataloader to access any other files except the NPZ files. The naming convention for SLO fundus photos follows the format "slo_xxxxxx.jpg," and for NPZ files, it is "data_xxxxx.npz," where "xxxxx" (e.g., 06691) represents a unique numeric ID. The dimensions of SLO fundus photos in NPZ files are 200 x 200, whereas those in the train/val/test folders are 512 x 664. The SLO fundus photos in NPZ files are created by resizing the photos in the folders and then normalizing them to [0, 255].
 
 NPZ files have the following keys. 
 
