@@ -9,22 +9,22 @@ Our dataset includes 10,000 subjects for Age-Related Macular Degeneration (AMD),
 The dataset has an approximate size of 600 GB. Upon downloading and extracting these datasets, the names of the folders in the downloaded dataset under folders AMD/DR/Glaucoma are Training, Validation, and Test, respectively, for readability. **Please rename them as train, val, and test.** Then, you will find the dataset structure as follows. 
 
 ```
-EyeFairness
+FairVision
 ├── AMD
 │   ├── test
 │   ├── train
 │   └── val
-├── amd_meta.csv
+├── data_summary_amd.csv
 ├── DR
 │   ├── test
 │   ├── train
 │   └── val
-├── dr_meta.csv
+├── data_summary_dr.csv
 ├── Glaucoma
 │   ├── test
 │   ├── train
 │   └── val
-└── glaucoma_meta.csv
+└── data_summary_glaucoma.csv
 ```
 The "train/val/test" directories contain two types of data: SLO fundus photos and NPZ files that store OCT B-scans, SLO fundus photos, and additional attributes. SLO fundus photos serve visual inspection purposes, while the copies in NPZ files eliminate the need for the dataloader to access any other files except the NPZ files. The naming convention for SLO fundus photos follows the format "slo_xxxxxx.jpg," and for NPZ files, it is "data_xxxxx.npz," where "xxxxx" (e.g., 06691) represents a unique numeric ID. The dimensions of SLO fundus photos in NPZ files are 200 x 200, whereas those in the train/val/test folders are 512 x 664. The SLO fundus photos in NPZ files are created by resizing the photos in the folders and then normalizing them to [0, 255].
 
