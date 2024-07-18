@@ -1,6 +1,6 @@
 # FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling
 
-The dataset Harvard-FairVision30k and code for the paper entitled [**FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling**](https://arxiv.org/abs/2310.02492). Note that, the modifier word “Harvard” only indicates that our dataset is from the Department of Ophthalmology of Harvard Medical School and does not imply an endorsement, sponsorship, or assumption of responsibility by either Harvard University or Harvard Medical School as a legal identity.
+The dataset Harvard-FairVision30k and code for the paper entitled [**FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling**](https://arxiv.org/pdf/2310.02492). Note that, the modifier word “Harvard” only indicates that our dataset is from the Department of Ophthalmology of Harvard Medical School and does not imply an endorsement, sponsorship, or assumption of responsibility by either Harvard University or Harvard Medical School as a legal identity.
 
 ## Dataset
 
@@ -135,3 +135,23 @@ To run the experiments with 3D ResNet with the proposed FIS on the task of AMD d
 ```
 
 To run the experiments on the tasks of DR and Glaucoma detection, you can edit the aforementioned scripts by changing the dataset directory (e.g., FairVision/AMD -> FairVision/DR) and the python file (e.g., train_amd_fair.py/train_amd_fair_fis.py/train_amd_fair_3d.py/train_amd_fair_3d_fis.py -> train_dr_fair.py/train_dr_fair_fis.py/train_dr_fair_3d.py/train_dr_fair_3d_fis.py).
+
+
+## Acknowledgment and Citation
+
+If you find this repository useful for your research, please consider citing our [paper](https://arxiv.org/pdf/2310.02492):
+
+```bibtex
+@misc{luo2024fairvisionequitabledeeplearning,
+      title={FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling}, 
+      author={Yan Luo and Muhammad Osama Khan and Yu Tian and Min Shi and Zehao Dou and Tobias Elze and Yi Fang and Mengyu Wang},
+      year={2024},
+      eprint={2310.02492},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2310.02492}, 
+}
+
+```
+
+
