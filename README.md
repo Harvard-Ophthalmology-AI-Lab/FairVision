@@ -1,10 +1,10 @@
 # FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling
 
-The dataset Harvard-FairVision30k and code for the paper entitled [**FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling**](https://arxiv.org/pdf/2310.02492). Note that, the modifier word “Harvard” only indicates that our dataset is from the Department of Ophthalmology of Harvard Medical School and does not imply an endorsement, sponsorship, or assumption of responsibility by either Harvard University or Harvard Medical School as a legal identity.
+The dataset Harvard-FairVision and code for the paper entitled [**FairVision: Equitable Deep Learning for Eye Disease Screening via Fair Identity Scaling**](https://arxiv.org/pdf/2310.02492). Note that, the modifier word “Harvard” only indicates that our dataset is from the Department of Ophthalmology of Harvard Medical School and does not imply an endorsement, sponsorship, or assumption of responsibility by either Harvard University or Harvard Medical School as a legal identity.
 
 ## Dataset
 
-The dataset Harvard-FairVision30k can be accessed via this [link](http://ophai.hms.harvard.edu/datasets/harvard-fairvision30k). This dataset can only be used for non-commercial research purposes. At no time, the dataset shall be used for clinical decisions or patient care. The data use license is [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+The dataset Harvard-FairVision can be accessed via this [link](https://drive.google.com/drive/folders/1sLX2O_0AlrjY6JmdKijiV1zducsOsd0m?usp=drive_link). This dataset can only be used for non-commercial research purposes. At no time, the dataset shall be used for clinical decisions or patient care. The data use license is [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you have any questions about this dataset, please email [harvardophai@gmail.com](harvardophai@gmail.com).
 
 Our dataset includes 10,000 subjects for Age-Related Macular Degeneration (AMD), Diabetic Retinopathy (DR), and glaucoma separately, totaling 30,000 subjects with comprehensive demographic identity attributes including age, gender, race, ethnicity, preferred language, and marital status. Each subject has one Scanning Laser Ophthalmoscopy (SLO) fundus photo and one sample of Optical Coherence Tomography (OCT) B-scans. The size of OCT B-scans is 200 x 200 x 200 in glaucoma, while the one of OCT B-scans. The size of OCT B-scans is 128 x 200 x 200 in AMD and DR. 
 
