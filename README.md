@@ -8,7 +8,7 @@ The dataset Harvard-FairVision can be accessed via this [link](https://drive.goo
 
 Our dataset includes 10,000 subjects for Age-Related Macular Degeneration (AMD), Diabetic Retinopathy (DR), and glaucoma separately, totaling 30,000 subjects with comprehensive demographic identity attributes including age, gender, race, ethnicity, preferred language, and marital status. Each subject has one Scanning Laser Ophthalmoscopy (SLO) fundus photo and one sample of Optical Coherence Tomography (OCT) B-scans. The size of OCT B-scans is 200 x 200 x 200 in glaucoma, while the one of OCT B-scans. The size of OCT B-scans is 128 x 200 x 200 in AMD and DR. 
 
-The dataset has an approximate size of 600 GB. Upon downloading and extracting these datasets, the names of the folders in the downloaded dataset under folders AMD/DR/Glaucoma are Training, Validation, and Test, respectively, for readability. **Please rename them as train, val, and test.** Then, you will find the dataset structure as follows. 
+The dataset has an approximate size of 600 GB. Upon downloading and extracting these datasets, the names of the folders in the downloaded dataset under folders AMD/DR/Glaucoma are Training, Validation, and Test, respectively, for readability. You will find the dataset structure as follows. 
 
 ```
 FairVision
